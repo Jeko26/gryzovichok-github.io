@@ -1,3 +1,10 @@
+let burger = document.querySelector('.burger');
+let links = document.querySelector('.header__links--burger');
+burger.addEventListener('click', function () {
+	links.classList.toggle('burger--open');
+	burger.classList.toggle('burger--cross');
+});
+
 var swiper = new Swiper(".swiper__container", {
     cssMode: true,
     loop: true,
@@ -21,15 +28,3 @@ function init() {
     zoom: 11,
   });
 }
-
-var swiper = new Swiper("swiper__container", {
-    cssMode: true,
-    loop: true,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-
-    mousewheel: true,
-    keyboard: true
-});

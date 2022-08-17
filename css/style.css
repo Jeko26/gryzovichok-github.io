@@ -82,7 +82,7 @@
     padding-bottom: 30px;
 }
 
-.heaer__group {
+.header__group {
     display: flex;
     align-items: center;
     width: 340px;
@@ -159,42 +159,6 @@
 .main__descr {
     text-align: center;
     padding: 0 15%;
-}
-
-
-.swiper {
-    background: rgba(47, 52, 58, 1);
-    padding: 150px 15%;
-}
-
-.swiper__container {
-    display: flex;
-}
-
-.swiper__wrapper {}
-
-
-.swiper-slide {
-    display: flex;
-    justify-content: space-between;
-}
-
-.swiper__text-box {
-    margin-bottom: 50px;
-}
-
-.swiper__title {
-    margin-bottom: 30px;
-    margin-top: 20px;
-}
-
-.swiper__btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 250px;
-    height: 60px;
-    background-color: rgba(200, 163, 95, 1);
 }
 
 .services {
@@ -340,6 +304,137 @@
     margin: 0;
 }
 
+.footer__item:hover, .footer__descr:hover {
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+    color: rgba(47, 52, 58, 1);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.header__link:hover, .header__mini-link:hover {
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+    color: rgba(200, 163, 95, 1);
+    cursor: pointer;
+}
+
+.footer__logo {
+    cursor: pointer;
+}
+
+/* swip */
+
+:root {
+    --swiper-theme-color: rgba(200, 163, 95, 1);
+}
+
+.swiper-button-next, .swiper-button-prev {
+    position: inherit;
+    top: 0;
+    height: inherit;
+    margin-top: 0;
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.swiper-button-next {
+    box-sizing: border-box;
+}
+
+.swiper-button-prev {
+    flex-direction: row-reverse;
+}
+
+.swiper {
+    background: rgba(47, 52, 58, 1);
+    padding: 150px 10%;
+}
+
+.swiper__container {
+    display: flex;
+}
+
+.swiper__buttons {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+
+.swiper-slide {
+    display: flex;
+    justify-content: normal;
+}
+
+.swiper__text-box {
+    margin-bottom: 50px;
+}
+
+.swiper__title {
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.swiper__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 60px;
+    background-color: rgba(200, 163, 95, 1);
+}
+
+.span__swiper {
+    color: rgba(47, 52, 58, 1);
+    width: 40%;
+    height: 10%;
+    border: 1px solid #C8A35F;
+    display: flex;
+    justify-content: center;
+    background-color: #C8A35F;
+
+}
+
+.swiper__click-prev {
+    margin-left: 20px;
+}
+
+.swiper__click-next {
+    margin-right: 20px;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 25px;
+}
+
+.swiper__group {
+    width: 50%;
+}
+
+/* hover */
+.swiper__image {
+    border-radius: 50%;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+}
+
+.swiper__image:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
 .header__language:hover {
     transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
     color: rgba(47, 52, 58, 1);
@@ -357,7 +452,7 @@
     cursor: pointer;
 }
 
-.europe__btn:hover {
+.swiper__btn:hover {
     transform: scale(105%);
     transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
     cursor: pointer;
@@ -370,37 +465,4 @@
     background-color: rgba(200, 163, 95, 1);
     transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
     cursor: pointer;
-}
-
-/* swip */
-
-:root {
-    --swiper-theme-color: rgba(200, 163, 95, 1);
-}
-
-.swiper-button-next, .swiper-button-prev {
-    position: inherit;
-    top: 50%;
-    height: inherit;
-    margin-top: 0;
-    z-index: 10;
-    cursor: pointer;
-    display: flex;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 25px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-}
-
-.swiper-button-next {
-    justify-content: flex-end;
-    margin-bottom: 200px;
-}
-
-.swiper-button-prev {
-    flex-direction: row-reverse;
-    justify-content: flex-start;
 }
